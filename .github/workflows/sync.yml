@@ -1,0 +1,23 @@
+name: Sync Fork and Push Gitlab
+
+on:
+  schedule:
+    - cron: '0 1 * * *' # every 30 minutes
+  workflow_dispatch: # on button click
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: sync-master
+        uses: tgymnich/fork-sync@v1.8
+        with:
+          owner: lich0821
+          base: master
+          head: master
+      - name: sync-3.9.2.23
+        uses: tgymnich/fork-sync@v1.8
+        with:
+          owner: lich0821
+          base: 3.9.2.23
+          head: 3.9.2.23
