@@ -15,9 +15,11 @@ jobs:
           owner: lich0821
           base: master
           head: master
+          ignore_fail: true
       - name: sync-3.9.2.23
         uses: tgymnich/fork-sync@v1.8
         with:
           owner: lich0821
           base: 3.9.2.23
           head: 3.9.2.23
+          ignore_fail: true
