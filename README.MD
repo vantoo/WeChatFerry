@@ -16,7 +16,7 @@
 
 </details>
 
-|[📖 Python 文档](https://wechatferry.readthedocs.io/)|[📺 Python 视频教程](https://mp.weixin.qq.com/s/APdjGyZ2hllXxyG_sNCfXQ)|[🙋 FAQ](https://mp.weixin.qq.com/s/Y2Q37VYV730Iu9TrgiCmCw)|
+|[📖 Python 文档](https://wechatferry.readthedocs.io/)|[📺 Python 视频教程](https://mp.weixin.qq.com/s/APdjGyZ2hllXxyG_sNCfXQ)|[🙋 FAQ](https://mp.weixin.qq.com/s/YvgFFhF6D-79kXDzRqtg6w)|
 |:-:|:-:|:-:|
 
 👉 [WeChatRobot🤖](https://github.com/lich0821/WeChatRobot)，一个基于 WeChatFerry 的 Python 机器人框架。
@@ -123,6 +123,11 @@ git clone https://github.com/microsoft/vcpkg
 环境变量增加 `vcpkg` 所在路径（本文为：`C:\Tools\vcpkg`）：
 ```sh
 setx VCPKG_ROOT "C:/Tools/vcpkg" /M
+```
+
+* 与 Visual Studio 集成
+```sh
+vcpkg integrate install # 失败则说明未正确安装或者未正确配置环境变量
 ```
 
 #### 安装相关组件
